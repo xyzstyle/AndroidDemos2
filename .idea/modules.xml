@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidDemos2.iml" filepath="$PROJECT_DIR$/AndroidDemos2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimationDemo1/AnimationDemo1.iml" filepath="$PROJECT_DIR$/AnimationDemo1/AnimationDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimationDemo2/AnimationDemo2.iml" filepath="$PROJECT_DIR$/AnimationDemo2/AnimationDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimationDemo3/AnimationDemo3.iml" filepath="$PROJECT_DIR$/AnimationDemo3/AnimationDemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnimationDemo4/AnimationDemo4.iml" filepath="$PROJECT_DIR$/AnimationDemo4/AnimationDemo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" filepath="$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" filepath="$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" filepath="$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo4/HandlerDemo4.iml" filepath="$PROJECT_DIR$/HandlerDemo4/HandlerDemo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo5/HandlerDemo5.iml" filepath="$PROJECT_DIR$/HandlerDemo5/HandlerDemo5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo6/HandlerDemo6.iml" filepath="$PROJECT_DIR$/HandlerDemo6/HandlerDemo6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HandlerDemo7/HandlerDemo7.iml" filepath="$PROJECT_DIR$/HandlerDemo7/HandlerDemo7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

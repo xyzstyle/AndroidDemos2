@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML的版本以及编码方式 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="5000"
+    android:interpolator="@android:anim/accelerate_interpolator" >
+
+    <!-- 透明度的变换 -->
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <!-- 大小的变化，//如果是放大，则从pivotX、pivotY这个点开始放大，缩小反之 -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:pivotX="20%"
+        android:pivotY="20%"
+        android:toXScale="1.0"
+        android:toYScale="1.0" />
+
+    <alpha
+        android:duration="3000"
+        android:startOffset="2000" />
+
+</set>
