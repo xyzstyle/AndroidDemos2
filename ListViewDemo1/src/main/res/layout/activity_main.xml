@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.listview1.MainActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+
+
+    <Button
+        android:id="@+id/mylistview_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_list_view_btn" />
+
+
+    <Button
+        android:id="@+id/simpleCursorAdapter_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_simpleCursorAdapter_btn" />
+
+    <Button
+        android:id="@+id/simpleAdapter_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_simpleAdapter_btn" />
+
+    <Button
+        android:id="@+id/myAdapter_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_myAdapter_btn" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ListViewDemo1</string>
+
+    <string name="hello">ListView Tutorial</string>
+
+
+    <string name="s_list_view_btn">简单的ListView</string>
+
+    <string name="s_simpleCursorAdapter_btn">simpleCursorAdapter</string>
+    <string name="s_simpleAdapter_btn">simpleAdapter</string>
+    <string name="s_myAdapter_btn">myAdapter</string>
+    <string name="s_view_btn">more</string>
+</resources>
