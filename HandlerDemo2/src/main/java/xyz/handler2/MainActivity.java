@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         public void handleMessage(Message msg) {
             switch(msg.what){
                 case 300:
-                    if(msg.arg2 == 0 || msg.arg1 == msg.arg2){
-
+                    if(msg.arg1 == msg.arg2){
+                        Toast.makeText(MainActivity.this,"Mission Accomplished",Toast.LENGTH_LONG).show();
                         progressDialog.dismiss();
                     }else{
                         progressDialog.setProgress(msg.arg1*100/msg.arg2);
@@ -39,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Button.OnClickListener l = new Button.OnClickListener(){
 
             public void onClick(View v) {
-                createDialog();
-                progressDialog.show();
+                createAndShowDialog();
                 progressThread = new ProgressThread(mHandler);
                 progressThread.start();
             }
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(l);
     }
 
-    private void createDialog() {
+    private void createAndShowDialog() {
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("后台处理");
         progressDialog.setMessage("请稍等，正在处理...");
@@ -56,5 +56,6 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.setCancelable(true);
         progressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         progressDialog.setProgress(0);
+        progressDialog.show();
     }
 }

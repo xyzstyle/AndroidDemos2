@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/z1"
         android:gravity="center"
+        android:scaleType="fitXY"
         android:contentDescription="@string/app_name" />
 
 </android.support.constraint.ConstraintLayout>

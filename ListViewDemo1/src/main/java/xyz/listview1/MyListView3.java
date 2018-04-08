@@ -31,19 +31,19 @@ public class MyListView3 extends AppCompatActivity{
     private List<Map<String, Object>> getData() {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
 
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         map.put("title", "G1");
         map.put("info", "google 1");
         map.put("img", R.drawable.i1);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G2");
         map.put("info", "google 2");
         map.put("img", R.drawable.i2);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G3");
         map.put("info", "google 3");
         map.put("img", R.drawable.i3);

@@ -11,7 +11,7 @@ public class PicShowThread extends Thread {
 		this.handler=handler;
 	}
 
-	int what = 1;   //发送消息的what值
+	int what = 0;   //发送消息的what值
 
 
 	@Override

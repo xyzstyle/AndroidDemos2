@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                     Date date=new Date(System.currentTimeMillis());
                     DateFormat dateFormat=DateFormat.getDateTimeInstance();
                     tv.setText(dateFormat.format(date));
+
                     sendMessageDelayed(obtainMessage(100),1000);
                     break;
             }
@@ -31,14 +32,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //makeClock();
+        setContentView(R.layout.activity_main);
+
         if(mHandler!=null){
             Message msg=mHandler.obtainMessage(100);
             if(msg!=null){
                 mHandler.sendMessage(msg);
             }
         }
-        setContentView(R.layout.activity_main);
+
     }
     /*private void makeClock(){
     	 mHandler= new Handler(){

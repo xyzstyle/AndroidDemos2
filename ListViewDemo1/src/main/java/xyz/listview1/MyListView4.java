@@ -20,11 +20,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by xyz on 2018/4/6.
- */
 
-public class MyListView4 extends ListActivity{
+public class MyListView4 extends ListActivity {
 
     private List<Map<String, Object>> mData;
 
@@ -37,75 +34,75 @@ public class MyListView4 extends ListActivity{
     }
 
     private List<Map<String, Object>> getData() {
-        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> list = new ArrayList<>();
 
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
         map.put("title", "G1");
         map.put("info", "google 1");
         map.put("img", R.drawable.i1);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G2");
         map.put("info", "google 2");
         map.put("img", R.drawable.i2);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G3");
         map.put("info", "google 3");
         map.put("img", R.drawable.i3);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G4");
         map.put("info", "google 4");
         map.put("img", R.drawable.i1);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G5");
         map.put("info", "google 5");
         map.put("img", R.drawable.i2);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G6");
         map.put("info", "google 6");
         map.put("img", R.drawable.i3);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G7");
         map.put("info", "google 7");
         map.put("img", R.drawable.i1);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G8");
         map.put("info", "google 8");
         map.put("img", R.drawable.i2);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G9");
         map.put("info", "google 9");
         map.put("img", R.drawable.i3);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G10");
         map.put("info", "google 10");
         map.put("img", R.drawable.i1);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G11");
         map.put("info", "google 11");
         map.put("img", R.drawable.i2);
         list.add(map);
 
-        map = new HashMap<String, Object>();
+        map = new HashMap<>();
         map.put("title", "G12");
         map.put("info", "google 12");
         map.put("img", R.drawable.i3);
@@ -118,26 +115,25 @@ public class MyListView4 extends ListActivity{
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
 
-        Log.v("MyListView4-click", (String)mData.get(position).get("title"));
+        Log.v("MyListView4-click", (String) mData.get(position).get("title"));
     }
 
     /**
-     * listview中点击按键弹出对话框
+     * ListView中点击按键弹出对话框
      */
 
 
-
-
-    public final class ViewHolder{
-        public ImageView img;
-        public TextView title;
-        public TextView info;
-        public Button viewBtn;
+    private final class ViewHolder {
+        ImageView img;
+        TextView title;
+        TextView info;
+        Button viewBtn;
     }
-    public void showInfo(int position){
-        int pos=position+1;
+
+    public void showInfo(int position) {
+        int pos = position + 1;
         new AlertDialog.Builder(MyListView4.this)
-                .setTitle("我的listview的第"+pos+"项")
+                .setTitle("我的ListView的第" + pos + "项")
                 .setMessage("介绍...")
                 .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
@@ -149,29 +145,27 @@ public class MyListView4 extends ListActivity{
     }
 
 
-    public class MyAdapter extends BaseAdapter {
+    private class MyAdapter extends BaseAdapter {
 
         private LayoutInflater mInflater;
 
 
-        public MyAdapter(Context context){
+        MyAdapter(Context context) {
             this.mInflater = LayoutInflater.from(context);
         }
+
         @Override
         public int getCount() {
-            // TODO Auto-generated method stub
             return mData.size();
         }
 
         @Override
         public Object getItem(int arg0) {
-            // TODO Auto-generated method stub
             return null;
         }
 
         @Override
         public long getItemId(int arg0) {
-            // TODO Auto-generated method stub
             return 0;
         }
 
@@ -179,31 +173,30 @@ public class MyListView4 extends ListActivity{
         public View getView(final int position, View convertView, ViewGroup parent) {
             //调用一次getView获取ListView中的一个item相对应的view
 
-            ViewHolder holder = null;
+            ViewHolder holder;
             if (convertView == null) {
 
-                holder=new ViewHolder();
-                //convertView是根据vlist2实例化后的一个View对象，每一个显示的item对应一个convertView
-                convertView = mInflater.inflate(R.layout.vlist2, null);
-                Log.v("tag", "positon " + position + " convertView is null, " + "new: " + convertView);
+                holder = new ViewHolder();
+                //convertView是根据vList2实例化后的一个View对象，每一个显示的item对应一个convertView
+                convertView = mInflater.inflate(R.layout.vlist2,null);
+                Log.v("tag", "position " + position + " convertView is null, " + "new: " + convertView);
                 //holder存放实例化后的convertView对象中的子对象，每一个convertView
-                holder.img = (ImageView)convertView.findViewById(R.id.img);
-                holder.title = (TextView)convertView.findViewById(R.id.title);
-                holder.info = (TextView)convertView.findViewById(R.id.info);
-                holder.viewBtn = (Button)convertView.findViewById(R.id.view_btn);
+                holder.img = (ImageView) convertView.findViewById(R.id.img);
+                holder.title = (TextView) convertView.findViewById(R.id.title);
+                holder.info = (TextView) convertView.findViewById(R.id.info);
+                holder.viewBtn = (Button) convertView.findViewById(R.id.view_btn);
                 //把holder放到相对应的convertView中，每一个convertView中都存放一个holder
                 convertView.setTag(holder);
+            } else {
 
-            }else {
-
-                holder = (ViewHolder)convertView.getTag();
-                Log.v("tag", "positon " + position + " convertView is not null, "  + convertView);
+                holder = (ViewHolder) convertView.getTag();
+                Log.v("tag", "position " + position + " convertView is not null, " + convertView);
             }
 
             //根据位置position信息重新设置convertView中的子对象的显示内容，显示内容来自mData
-            holder.img.setBackgroundResource((Integer)mData.get(position).get("img"));
-            holder.title.setText((String)mData.get(position).get("title"));
-            holder.info.setText((String)mData.get(position).get("info"));
+            holder.img.setBackgroundResource((Integer) mData.get(position).get("img"));
+            holder.title.setText((String) mData.get(position).get("title"));
+            holder.info.setText((String) mData.get(position).get("info"));
 
             holder.viewBtn.setOnClickListener(new View.OnClickListener() {
 
