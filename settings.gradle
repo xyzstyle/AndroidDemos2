@@ -1,1 +1,1 @@
-include ':app', ':HandlerDemo1', ':HandlerDemo2', ':HandlerDemo3', ':HandlerDemo7', ':HandlerDemo5', ':HandlerDemo4', ':HandlerDemo6', ':AnimationDemo1', ':AnimationDemo2', ':AnimationDemo3', ':AnimationDemo4', ':ListViewDemo1', ':ListViewDemo2', ':LoadDemo1'
+include ':app', ':HandlerDemo1', ':HandlerDemo2', ':HandlerDemo3', ':HandlerDemo7', ':HandlerDemo5', ':HandlerDemo4', ':HandlerDemo6', ':AnimationDemo1', ':AnimationDemo2', ':AnimationDemo3', ':AnimationDemo4', ':ListViewDemo1', ':ListViewDemo2', ':LoaderDemo1'
