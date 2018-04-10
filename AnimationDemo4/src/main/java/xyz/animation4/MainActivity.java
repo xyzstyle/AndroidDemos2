@@ -63,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
         prepareAnimationForPic2();
         prepareAnimationForPic3();
         prepareAnimationForPic4();
-        myImageView.setImageResource(R.drawable.z1);
-        myImageView.startAnimation(animationSet1);
+        myHandler.sendEmptyMessage(0);
 
     }
 

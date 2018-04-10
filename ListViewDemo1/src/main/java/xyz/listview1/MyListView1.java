@@ -22,7 +22,7 @@ public class MyListView1  extends AppCompatActivity{
 
         ListView listView = new ListView(this);
         listView.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1,getData()));
-        listView.setBackgroundColor(Color.GRAY);
+        //listView.setBackgroundColor(Color.GRAY);
         setContentView(listView);
     }
 

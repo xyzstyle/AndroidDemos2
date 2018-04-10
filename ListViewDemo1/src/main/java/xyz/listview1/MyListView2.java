@@ -108,7 +108,7 @@ public class MyListView2 extends AppCompatActivity {
                 this,
                 android.R.layout.simple_list_item_2,
                 null,
-                new String[]{ContactsContract.Contacts.DISPLAY_NAME, ContactsContract.Contacts.CONTACT_STATUS},
+                new String[]{ContactsContract.Contacts.DISPLAY_NAME, ContactsContract.Contacts.DISPLAY_NAME},
                 new int[]{android.R.id.text1, android.R.id.text2},
                 0);
         listView.setAdapter(adapter);

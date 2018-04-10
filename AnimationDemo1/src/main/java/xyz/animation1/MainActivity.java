@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             AnimationSet animationSet = new AnimationSet(true);
-            RotateAnimation rotateAnimation = new RotateAnimation(0, 180,
+            RotateAnimation rotateAnimation = new RotateAnimation(0, 360,
                     Animation.RELATIVE_TO_PARENT, 0.5f,
-                    Animation.RELATIVE_TO_SELF, 3f);
+                    Animation.RELATIVE_TO_SELF, 0f);
             rotateAnimation.setDuration(5000);
             animationSet.addAnimation(rotateAnimation);
             imageView.startAnimation(animationSet);
@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             AnimationSet animationSet = new AnimationSet(true);
-            ScaleAnimation scaleAnimation = new ScaleAnimation(3, 1f, 3, 1f,
-                    Animation.RELATIVE_TO_SELF, -2f,//如果是放大，向这个点开始放大
-                    Animation.RELATIVE_TO_SELF, -2f);//如果是缩小，从这个点开始缩小
+            ScaleAnimation scaleAnimation = new ScaleAnimation(1, 3, 1, 3,
+                    Animation.RELATIVE_TO_SELF, 0f,//如果是放大，向这个点开始放大
+                    Animation.RELATIVE_TO_SELF, 0f);//如果是缩小，从这个点开始缩小
             animationSet.addAnimation(scaleAnimation);
             animationSet.setStartOffset(1000);
             animationSet.setFillAfter(true);
@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
             animationSet.setDuration(2000);
             imageView.startAnimation(animationSet);
         }
-
     }
 
     private class AlphaButtonListener implements View.OnClickListener {
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             //创建一个AnimationSet对象
             AnimationSet animationSet = new AnimationSet(true);
             //创建一个AlphaAnimation对象
-            AlphaAnimation alphaAnimation = new AlphaAnimation(1,0.5f);
+            AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
             //设置动画执行的时间（单位：毫秒）
             alphaAnimation.setDuration(3000);
             animationSet.setFillAfter(true);
@@ -96,14 +95,14 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             AnimationSet animationSet = new AnimationSet(true);
             TranslateAnimation translateAnimation = new TranslateAnimation(
-                    Animation.RELATIVE_TO_SELF, 2f,
-                    Animation.RELATIVE_TO_SELF, 4f,
                     Animation.RELATIVE_TO_SELF, 0f,
-                    Animation.RELATIVE_TO_SELF, 2.0f);
-            translateAnimation.setDuration(1000);
+                    Animation.RELATIVE_TO_PARENT, 0.8f,
+                    Animation.RELATIVE_TO_SELF, 0f,
+                    Animation.RELATIVE_TO_SELF, 0f);
+            translateAnimation.setDuration(4000);
             animationSet.addAnimation(translateAnimation);
-            animationSet.setFillAfter(true);
-            animationSet.setFillBefore(false);
+            //animationSet.setFillAfter(true);
+            //animationSet.setFillBefore(false);
             imageView.startAnimation(animationSet);
         }
     }
