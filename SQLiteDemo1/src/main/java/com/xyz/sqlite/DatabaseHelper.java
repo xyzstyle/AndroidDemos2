@@ -43,16 +43,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		Log.d(TAG, "onUpgrade=" + newVersion);
 		dropTableDiary(db);
 		createTableDiary(db);
-		Log.d(TAG, "onUpgrade sucessed");
+		Log.d(TAG, "onUpgrade success");
 	}
-	public void createTableDiary(SQLiteDatabase db){
+	 void createTableDiary(SQLiteDatabase db){
 		String sql = "CREATE TABLE " + TABLE_NAME_DIARY + " (" + DIARY_TITLE
 				+ " text not null, " + DIARY_BODY + " text not null " + ");";
 
 		db.execSQL(sql);
-		Log.d(TAG, " CreateDB SUCESSED, SQL=" + sql);
+		Log.d(TAG, " CreateDB SUCCESS, SQL=" + sql);
 	}
-	public void dropTableDiary(SQLiteDatabase db){
+	 void dropTableDiary(SQLiteDatabase db){
 		db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_DIARY);
 		
 	}

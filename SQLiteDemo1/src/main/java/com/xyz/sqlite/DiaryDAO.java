@@ -75,7 +75,7 @@ public class DiaryDAO {
 			Log.d(TAG, "Insert sql=" + sql2);
 			db.execSQL(sql1);
 			db.execSQL(sql2);
-			Log.d(TAG, "insertItem sucessed");
+			Log.d(TAG, "insertItem succeeded");
 			return true;
 			
 		} catch (SQLException e) {
