@@ -1895,6 +1895,7 @@ containing a value of this type.
         public static final int info=0x7f0a0069;
         public static final int line1=0x7f0a006e;
         public static final int line3=0x7f0a0070;
+        public static final int list=0x7f0a005b;
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a002b;
         public static final int media_actions=0x7f0a0062;
@@ -1940,7 +1941,6 @@ containing a value of this type.
         public static final int submenuarrow=0x7f0a0041;
         public static final int submit_area=0x7f0a0052;
         public static final int tabMode=0x7f0a000b;
-        public static final int table1=0x7f0a005b;
         public static final int text=0x7f0a0071;
         public static final int text2=0x7f0a006f;
         public static final int textSpacerNoButtons=0x7f0a0035;

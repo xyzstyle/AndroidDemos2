@@ -2,6 +2,7 @@ package com.xyz.sqlite;
 
 import android.app.Activity;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Telephony;
 import android.support.v4.app.LoaderManager;
@@ -13,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Toast;
 
 public class MyActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 	OnClickListener listener1 = null;
@@ -35,68 +37,74 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
-		prepareListener();
+        diary = new DiaryDAO(this);
 		init();
-		diary = new DiaryDAO(this);
+        LoaderManager lm = getSupportLoaderManager();
+        lm.initLoader(22, new Bundle(), this);
+
 
 	}
 
 	private void init() {
 		list = (ListView) findViewById(R.id.list);
-		button1 = (Button) findViewById(R.id.button1);
-		button1.setOnClickListener(listener1);
 
-		button2 = (Button) findViewById(R.id.button2);
-		button2.setOnClickListener(listener2);
-
-		button3 = (Button) findViewById(R.id.button3);
-		button3.setOnClickListener(listener3);
-		button4 = (Button) findViewById(R.id.button4);
-		button4.setOnClickListener(listener4);
-
-		button5 = (Button) findViewById(R.id.button5);
-		button5.setOnClickListener(listener5);
 		listener1 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.createTable()){
-					setTitle("数据表成功重建");
+					show("数据表成功重建");
 				}else{
-					setTitle("数据表重建错误");
+					show("数据表重建错误");
 				}
 			}
 		};
 		listener2 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.dropTable()){
-					setTitle("数据表成功删除");
+					show("数据表成功删除");
 				}else{
-					setTitle("数据表删除错误");
+					show("数据表删除错误");
 				}
 			}
 		};
 		listener3 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.insertItem()){
-					setTitle("插入两条数据成功");
+					show("插入两条数据成功");
+                    getSupportLoaderManager().restartLoader(22, new Bundle(), MyActivity.this);
 				}else{
-					setTitle("插入两条数据失败");
+					show("插入两条数据失败");
 				}
 			}
 		};
 		listener4 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.deleteItem()){
-					setTitle("删除title为google的记录");
+                    getSupportLoaderManager().restartLoader(22, new Bundle(), MyActivity.this);
+					show("删除title为google的记录");
 				}else{
-					setTitle("删除不了title为google的记录");
+					show("删除不了title为google的记录");
 				}
 			}
 		};
 		listener5 = new OnClickListener() {
 			public void onClick(View v) {
-				showItems();
+				//showItems();
 			}
 		};
+
+        button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(listener1);
+
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(listener2);
+
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(listener3);
+        button4 = (Button) findViewById(R.id.button4);
+        button4.setOnClickListener(listener4);
+
+        button5 = (Button) findViewById(R.id.button5);
+        button5.setOnClickListener(listener5);
 		simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.onerow, null
 				, new String[]{DatabaseHelper.DIARY_TITLE,DatabaseHelper.DIARY_BODY}
 				, new int[]{R.id.title, R.id.body}, SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
@@ -104,36 +112,43 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 
 	}
 
-	// 按钮响应函数
-	private void prepareListener() {
 
-	}
-	MyAdapter myAdapter;
-	MyView myView;
-	private void showItems() {
-		Cursor cur = diary.getRecords();
-		if (!(cur == null)) {
-			int num=cur.getCount();
-			setTitle(Integer.toString(num) + " 条记录");
-			myView=(MyView)findViewById(R.id.table1);
-			myAdapter=new MyAdapter(this, R.layout.onerow, cur, new int[]{R.id.title,R.id.body});
-			myView.setAdapter(myAdapter);
-			
-		}
-	}
+//	MyAdapter myAdapter;
+//	MyView myView;
+//	private void showItems() {
+//		Cursor cur = diary.getRecords();
+//		if (!(cur == null)) {
+//			int num=cur.getCount();
+//			show(Integer.toString(num) + " 条记录");
+//			myView=(MyView)findViewById(R.id.table1);
+//			myAdapter=new MyAdapter(this, R.layout.onerow, cur, new int[]{R.id.title,R.id.body});
+//			myView.setAdapter(myAdapter);
+//
+//		}
+//	}
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
-		return new Loader(MyActivity.this);
+		CursorLoader loader = new CursorLoader(this,
+				Uri.parse("content://com.xyz.content_provider"), null, null,
+				null, null);
+		return loader;
 	}
 
 	@Override
 	public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        simpleCursorAdapter.swapCursor(data);
 
 	}
 
 	@Override
 	public void onLoaderReset(Loader<Cursor> loader) {
-
+        simpleCursorAdapter.swapCursor(null);
 	}
+
+
+    private void show(String s) {
+        Toast.makeText(this,s,Toast.LENGTH_LONG).show();
+
+    }
 }

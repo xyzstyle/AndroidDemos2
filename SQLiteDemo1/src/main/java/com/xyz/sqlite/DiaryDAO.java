@@ -115,8 +115,9 @@ public class DiaryDAO {
 			Log.d(TAG, "showItems before getReadableDatabase");
 			SQLiteDatabase db = mOpenHelper.getReadableDatabase();
 			Log.d(TAG, "showItems after getReadableDatabase");
-			String col[] = { TITLE, BODY };
-			return cur = db.query(TABLE_NAME, col, null, null, null, null, null);
+			String col[] = { "_id",TITLE, BODY };
+			cur = db.query(TABLE_NAME, col, null, null, null, null, null);
+			return cur;
 			
 		} catch (SQLException e) {
 			

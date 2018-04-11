@@ -9,13 +9,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	private static final String TAG = "xyz";
 	private static final String DATABASE_NAME = "dbForTest.db";
-	private static final int DATABASE_VERSION = 5;
+	private static final int DATABASE_VERSION = 6;
 	public static final String TABLE_NAME_DIARY = "diary";
+    public static final String ID = "_id";
 	public static final String DIARY_TITLE = "title";
 	public static final String DIARY_BODY = "body";
 
 
-	
+
 	public DatabaseHelper(Context context) {
 
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -39,8 +40,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		Log.d(TAG, "onUpgrade success");
 	}
 	 void createTableDiary(SQLiteDatabase db){
-		String sql = "CREATE TABLE " + TABLE_NAME_DIARY + " (" + DIARY_TITLE
-				+ " text not null, " + DIARY_BODY + " text not null " + ");";
+		String sql = "CREATE TABLE " + TABLE_NAME_DIARY + " (" + ID+" INTEGER PRIMARY KEY,"
+                +DIARY_TITLE+ " text not null, " + DIARY_BODY + " text not null " + ");";
 
 		db.execSQL(sql);
 		Log.d(TAG, " CreateDB SUCCESS, SQL=" + sql);
