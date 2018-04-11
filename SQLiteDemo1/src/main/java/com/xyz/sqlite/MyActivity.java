@@ -3,12 +3,18 @@ package com.xyz.sqlite;
 import android.app.Activity;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.provider.Telephony;
+import android.support.v4.app.LoaderManager;
+import android.support.v4.content.CursorLoader;
+import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
-public class MyActivity extends AppCompatActivity {
+public class MyActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 	OnClickListener listener1 = null;
 	OnClickListener listener2 = null;
 	OnClickListener listener3 = null;
@@ -22,18 +28,21 @@ public class MyActivity extends AppCompatActivity {
 	Button button5;
 
 	DiaryDAO diary;
+	private ListView list;
+	private SimpleCursorAdapter simpleCursorAdapter;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		prepareListener();
-		initLayout();
+		init();
 		diary = new DiaryDAO(this);
 
 	}
 
-	private void initLayout() {
+	private void init() {
+		list = (ListView) findViewById(R.id.list);
 		button1 = (Button) findViewById(R.id.button1);
 		button1.setOnClickListener(listener1);
 
@@ -47,11 +56,6 @@ public class MyActivity extends AppCompatActivity {
 
 		button5 = (Button) findViewById(R.id.button5);
 		button5.setOnClickListener(listener5);
-
-	}
-
-	// 按钮响应函数
-	private void prepareListener() {
 		listener1 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.createTable()){
@@ -82,7 +86,7 @@ public class MyActivity extends AppCompatActivity {
 		listener4 = new OnClickListener() {
 			public void onClick(View v) {
 				if(diary.deleteItem()){
-					setTitle("删除title为google的记录");	
+					setTitle("删除title为google的记录");
 				}else{
 					setTitle("删除不了title为google的记录");
 				}
@@ -93,12 +97,21 @@ public class MyActivity extends AppCompatActivity {
 				showItems();
 			}
 		};
+		simpleCursorAdapter = new SimpleCursorAdapter(this, R.layout.onerow, null
+				, new String[]{DatabaseHelper.DIARY_TITLE,DatabaseHelper.DIARY_BODY}
+				, new int[]{R.id.title, R.id.body}, SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
+		list.setAdapter(simpleCursorAdapter);
+
+	}
+
+	// 按钮响应函数
+	private void prepareListener() {
+
 	}
 	MyAdapter myAdapter;
 	MyView myView;
 	private void showItems() {
-		Cursor cur = diary.showItems();
-		
+		Cursor cur = diary.getRecords();
 		if (!(cur == null)) {
 			int num=cur.getCount();
 			setTitle(Integer.toString(num) + " 条记录");
@@ -109,4 +122,18 @@ public class MyActivity extends AppCompatActivity {
 		}
 	}
 
+	@Override
+	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+		return new Loader(MyActivity.this);
+	}
+
+	@Override
+	public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+
+	}
+
+	@Override
+	public void onLoaderReset(Loader<Cursor> loader) {
+
+	}
 }

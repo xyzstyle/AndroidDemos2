@@ -10,24 +10,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String TAG = "xyz";
 	private static final String DATABASE_NAME = "dbForTest.db";
 	private static final int DATABASE_VERSION = 5;
-	private static final String TABLE_NAME_DIARY = "diary";
-	private static final String DIARY_TITLE = "title";
-	private static final String DIARY_BODY = "body";
+	public static final String TABLE_NAME_DIARY = "diary";
+	public static final String DIARY_TITLE = "title";
+	public static final String DIARY_BODY = "body";
 
-	private static DatabaseHelper mDatabaseHelper;
+
 	
-	private DatabaseHelper(Context context) {
+	public DatabaseHelper(Context context) {
 
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
 		Log.d(TAG, "CreateDB Version=" + DATABASE_VERSION);
 
-	}
-	public static DatabaseHelper getDatabaseHelper(Context context){
-		
-		if( mDatabaseHelper==null){
-			 mDatabaseHelper=new  DatabaseHelper(context);
-		}
-		return  mDatabaseHelper;
 	}
 
 	@Override

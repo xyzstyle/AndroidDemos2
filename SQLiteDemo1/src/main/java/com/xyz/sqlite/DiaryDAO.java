@@ -16,7 +16,7 @@ public class DiaryDAO {
 	private static final String BODY = "body";
 	
 	DiaryDAO(Context context){
-		mOpenHelper=DatabaseHelper.getDatabaseHelper(context);
+		mOpenHelper=new DatabaseHelper(context);
 	}
 
 	/*
@@ -109,7 +109,7 @@ public class DiaryDAO {
 	 * 获取所有记录的Cursor。
 	 */
 	
-	public  Cursor showItems() {
+	public  Cursor getRecords() {
 		Cursor cur = null;
 		try {
 			Log.d(TAG, "showItems before getReadableDatabase");
