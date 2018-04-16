@@ -29,7 +29,7 @@ public class MyListView3 extends AppCompatActivity{
     }
 
     private List<Map<String, Object>> getData() {
-        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> list = new ArrayList<>();
 
         Map<String, Object> map = new HashMap<>();
         map.put("title", "G1");

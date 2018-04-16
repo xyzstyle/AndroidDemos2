@@ -68,9 +68,9 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 		};
 		listener3 = new OnClickListener() {
 			public void onClick(View v) {
-				if(diary.insertItem()){
+				if(diary.insertRecord()){
 					show("插入两条数据成功");
-                    getSupportLoaderManager().restartLoader(22, new Bundle(), MyActivity.this);
+					getContentResolver().notifyChange(Uri.parse("content://com.xyz.content_provider"), null);
 				}else{
 					show("插入两条数据失败");
 				}
@@ -78,7 +78,7 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 		};
 		listener4 = new OnClickListener() {
 			public void onClick(View v) {
-				if(diary.deleteItem()){
+				if(diary.deleteRecord()){
                     getSupportLoaderManager().restartLoader(22, new Bundle(), MyActivity.this);
 					show("删除title为google的记录");
 				}else{
@@ -113,19 +113,7 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 	}
 
 
-//	MyAdapter myAdapter;
-//	MyView myView;
-//	private void showItems() {
-//		Cursor cur = diary.getRecords();
-//		if (!(cur == null)) {
-//			int num=cur.getCount();
-//			show(Integer.toString(num) + " 条记录");
-//			myView=(MyView)findViewById(R.id.table1);
-//			myAdapter=new MyAdapter(this, R.layout.onerow, cur, new int[]{R.id.title,R.id.body});
-//			myView.setAdapter(myAdapter);
-//
-//		}
-//	}
+
 
 	@Override
 	public Loader<Cursor> onCreateLoader(int id, Bundle args) {
