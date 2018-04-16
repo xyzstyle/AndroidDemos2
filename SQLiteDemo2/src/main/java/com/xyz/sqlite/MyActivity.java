@@ -39,8 +39,7 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 		setContentView(R.layout.main);
         diary = new DiaryDAO(this);
 		init();
-        LoaderManager lm = getSupportLoaderManager();
-        lm.initLoader(22, new Bundle(), this);
+
 
 
 	}
@@ -109,6 +108,8 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 				, new String[]{DatabaseHelper.DIARY_TITLE,DatabaseHelper.DIARY_BODY}
 				, new int[]{R.id.title, R.id.body}, SimpleCursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
 		list.setAdapter(simpleCursorAdapter);
+		LoaderManager lm = getSupportLoaderManager();
+		lm.initLoader(22, null, this);
 
 	}
 

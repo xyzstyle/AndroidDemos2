@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/ListViewDemo1/ListViewDemo1.iml" filepath="$PROJECT_DIR$/ListViewDemo1/ListViewDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListViewDemo2/ListViewDemo2.iml" filepath="$PROJECT_DIR$/ListViewDemo2/ListViewDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoaderDemo1/LoaderDemo1.iml" filepath="$PROJECT_DIR$/LoaderDemo1/LoaderDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoaderDemo2/LoaderDemo2.iml" filepath="$PROJECT_DIR$/LoaderDemo2/LoaderDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" filepath="$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" filepath="$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
