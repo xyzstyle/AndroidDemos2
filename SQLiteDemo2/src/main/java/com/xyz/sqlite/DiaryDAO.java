@@ -70,6 +70,9 @@ public class DiaryDAO {
 		cv.put(TITLE, "google");
 		cv.put(BODY, "you have something to do");
 		db.insert(TABLE_NAME, null, cv);
+		cv = new ContentValues();
+		cv.put(TITLE, "google1");
+		cv.put(BODY, "you have something to do");
 		return db.insert(TABLE_NAME, null, cv)!=-1;
 
 	}

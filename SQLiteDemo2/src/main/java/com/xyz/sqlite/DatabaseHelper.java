@@ -7,9 +7,9 @@ import android.util.Log;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String TAG = "xyz";
+    private static final String TAG = "xyz111";
     private static final String DATABASE_NAME = "dbForTest.db";
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 7;
     static final String TABLE_NAME_DIARY = "diary";
     static final String ID = "_id";
     static final String DIARY_TITLE = "title";
@@ -19,7 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     DatabaseHelper(Context context) {
 
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        Log.d(TAG, "CreateDB Version=" + DATABASE_VERSION);
+        Log.d(TAG, "Create DatabaseHelper Object Version=" + DATABASE_VERSION);
 
     }
 
@@ -41,7 +41,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     void createTableDiary(SQLiteDatabase db) {
         String sql = "CREATE TABLE " + TABLE_NAME_DIARY + " (" + ID + " INTEGER PRIMARY KEY,"
-                + DIARY_TITLE + " text not null, " + DIARY_BODY + " text not null " + ");";
+                + DIARY_TITLE + " TEXT NOT NULL, " + DIARY_BODY + " TEXT NOT NULL " + ");";
 
         db.execSQL(sql);
         Log.d(TAG, " CreateDB SUCCESS, SQL=" + sql);
