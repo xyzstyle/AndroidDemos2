@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AlarmDemo1" />
             <option value="$PROJECT_DIR$/AnimationDemo1" />
             <option value="$PROJECT_DIR$/AnimationDemo2" />
             <option value="$PROJECT_DIR$/AnimationDemo3" />
@@ -23,6 +24,9 @@
             <option value="$PROJECT_DIR$/ListViewDemo2" />
             <option value="$PROJECT_DIR$/LoaderDemo1" />
             <option value="$PROJECT_DIR$/LoaderDemo2" />
+            <option value="$PROJECT_DIR$/NotificationDemo1" />
+            <option value="$PROJECT_DIR$/NotificationDemo2" />
+            <option value="$PROJECT_DIR$/ReceiverDemo1" />
             <option value="$PROJECT_DIR$/SQLiteDemo1" />
             <option value="$PROJECT_DIR$/SQLiteDemo2" />
             <option value="$PROJECT_DIR$/app" />

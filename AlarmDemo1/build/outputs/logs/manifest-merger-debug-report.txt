@@ -1,0 +1,75 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:3:11-35
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:5:11-36
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:4:11-34
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:7:5-25:19
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\xyz\.android\build-cache\54a23a68585b363e3eae8d1af5852161a974b5b2\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\xyz\.android\build-cache\2552f333092af734491ecd1d4fd4a70661a44068\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\xyz\.android\build-cache\6f526fb85dce1b3c9c09930d5aed52b1e7b50d2f\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\xyz\.android\build-cache\3069fb23d29c0cdeebbe7997a74038a493b42623\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\xyz\.android\build-cache\bb50ccfe1c6042e200a1d1a30d356b2ff0a1c412\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\xyz\.android\build-cache\d7c99b7ade8c28e91cfb74aa66da5b42a325a019\output\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:10:9-41
+	android:allowBackup
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:9:9-45
+	android:theme
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:11:9-40
+activity#com.xyz.alarm1.MainActivity
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:14:13-45
+	android:name
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:13:13-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:16:17-68
+	android:name
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:18:17-76
+	android:name
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:18:27-74
+receiver#com.xyz.alarm1.AlarmReceiver
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:21:9-23:40
+	android:process
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:23:13-38
+	android:name
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:22:13-56
+activity#com.xyz.alarm1.SecondActivity
+ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:24:9-65
+	android:name
+		ADDED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml:24:19-63
+uses-sdk
+INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:support-v4:25.1.0] C:\Users\xyz\.android\build-cache\54a23a68585b363e3eae8d1af5852161a974b5b2\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.0] C:\Users\xyz\.android\build-cache\2552f333092af734491ecd1d4fd4a70661a44068\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.0] C:\Users\xyz\.android\build-cache\6f526fb85dce1b3c9c09930d5aed52b1e7b50d2f\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.0] C:\Users\xyz\.android\build-cache\3069fb23d29c0cdeebbe7997a74038a493b42623\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.0] C:\Users\xyz\.android\build-cache\bb50ccfe1c6042e200a1d1a30d356b2ff0a1c412\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.0] C:\Users\xyz\.android\build-cache\d7c99b7ade8c28e91cfb74aa66da5b42a325a019\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:25.1.0] C:\Users\xyz\.android\build-cache\54a23a68585b363e3eae8d1af5852161a974b5b2\output\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudio\AndroidDemos2\AlarmDemo1\src\main\AndroidManifest.xml

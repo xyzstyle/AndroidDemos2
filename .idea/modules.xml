@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlarmDemo1/AlarmDemo1.iml" filepath="$PROJECT_DIR$/AlarmDemo1/AlarmDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidDemos2.iml" filepath="$PROJECT_DIR$/AndroidDemos2.iml" />
       <module fileurl="file://$PROJECT_DIR$/AnimationDemo1/AnimationDemo1.iml" filepath="$PROJECT_DIR$/AnimationDemo1/AnimationDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/AnimationDemo2/AnimationDemo2.iml" filepath="$PROJECT_DIR$/AnimationDemo2/AnimationDemo2.iml" />
@@ -18,6 +19,9 @@
       <module fileurl="file://$PROJECT_DIR$/ListViewDemo2/ListViewDemo2.iml" filepath="$PROJECT_DIR$/ListViewDemo2/ListViewDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoaderDemo1/LoaderDemo1.iml" filepath="$PROJECT_DIR$/LoaderDemo1/LoaderDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoaderDemo2/LoaderDemo2.iml" filepath="$PROJECT_DIR$/LoaderDemo2/LoaderDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NotificationDemo1/NotificationDemo1.iml" filepath="$PROJECT_DIR$/NotificationDemo1/NotificationDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NotificationDemo2/NotificationDemo2.iml" filepath="$PROJECT_DIR$/NotificationDemo2/NotificationDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReceiverDemo1/ReceiverDemo1.iml" filepath="$PROJECT_DIR$/ReceiverDemo1/ReceiverDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" filepath="$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" filepath="$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

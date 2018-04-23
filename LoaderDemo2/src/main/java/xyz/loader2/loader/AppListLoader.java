@@ -19,8 +19,7 @@ import java.util.List;
  * Created by Administrator on 2016/5/25.
  */
 public class AppListLoader  extends AsyncTaskLoader<List<AppEntry>> {
-    private static final String TAG = "ADP_AppListLoader";
-    private static final boolean DEBUG = true;
+
     final PackageManager mPm;//包管理器
     private List<AppEntry> mApps;//装在应用程序实体的容器
 
