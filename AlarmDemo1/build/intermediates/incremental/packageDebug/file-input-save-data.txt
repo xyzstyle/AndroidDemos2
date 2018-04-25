@@ -1,21 +1,24 @@
 #Internal package file, do not edit.
-#Mon Apr 23 10:00:36 CST 2018
+#Wed Apr 25 10:44:22 CST 2018
 2.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
-5.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+5.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
 5.set=ANDROID_RESOURCE
 3.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
+6.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
 2.set=ANDROID_RESOURCE
-4.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-count=6
-0.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+4.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
+count=7
+0.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2ae78e3227deb32374914ca314bb0fd8c5b28826\\classes.dex
 5.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
-4.set=DEX
-1.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
-1.set=ANDROID_RESOURCE
-2.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
-0.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
-3.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
+4.set=ANDROID_RESOURCE
+6.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
+1.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9b3514e90c7a7549b5dfb4b458d3acd2e3076000\\classes.dex
+1.set=DEX
+2.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+6.set=ANDROID_RESOURCE
+0.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2ae78e3227deb32374914ca314bb0fd8c5b28826
+3.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\ic_launcher.png
 3.set=ANDROID_RESOURCE
-1.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_
-4.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
-0.set=ANDROID_RESOURCE
+1.base=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9b3514e90c7a7549b5dfb4b458d3acd2e3076000
+4.file=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+0.set=DEX

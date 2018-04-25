@@ -1,5 +1,5 @@
-include ':app', ':HandlerDemo1', ':HandlerDemo2', ':HandlerDemo3', ':HandlerDemo7', ':HandlerDemo5', ':HandlerDemo4', ':HandlerDemo6', ':LoaderDemo2', ':NotificationDemo2', ':NotificationDemo1',
+include ':app', ':HandlerDemo1', ':HandlerDemo2', ':HandlerDemo3', ':HandlerDemo7', ':HandlerDemo5', ':HandlerDemo4', ':HandlerDemo6', ':LoaderDemo2', ':NotificationDemo2', ':NotificationDemo1', ':SurfaceViewDemo1', ':PickerDemo1',
         ':AnimationDemo1', ':AnimationDemo2', ':AnimationDemo3', ':AnimationDemo4', ':ListViewDemo1', ':ListViewDemo2', ':LoaderDemo1',
-        ':SQLiteDemo1', ':SQLiteDemo2', ':ReceiverDemo1',':AlarmDemo1'
+        ':SQLiteDemo1', ':SQLiteDemo2', ':ReceiverDemo1', ':AlarmDemo1'
 
 

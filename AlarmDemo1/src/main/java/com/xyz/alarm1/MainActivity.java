@@ -58,10 +58,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		manager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), sender);
 	}
 
+	private void salf() {
+
+	}
+
 	
 	
-	private int mMinute = 37;
-	private int mHour = 22;
+	private int mMinute = 51;
+	private int mHour = 10;
 	private long myInterval;
 	private void myAlarmTwo() {
 		myInterval = 10 * 1000;

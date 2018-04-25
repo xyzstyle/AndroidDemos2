@@ -1,4 +1,7 @@
-#Mon Apr 23 10:00:36 CST 2018
-base.0=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Wed Apr 25 10:44:22 CST 2018
+base.0=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9b3514e90c7a7549b5dfb4b458d3acd2e3076000
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2ae78e3227deb32374914ca314bb0fd8c5b28826\\classes.dex
+base.1=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_2ae78e3227deb32374914ca314bb0fd8c5b28826
+file.0=D\:\\AndroidStudio\\AndroidDemos2\\AlarmDemo1\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9b3514e90c7a7549b5dfb4b458d3acd2e3076000\\classes.dex
