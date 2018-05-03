@@ -30,7 +30,7 @@
                 <action android:name="com.xyz.static" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.xyz.receiver1.SysMsgReceiver" >
+        <receiver android:name="com.xyz.receiver1.BootCompletedReceiver" >
             <intent-filter>
                 <action  android:name="android.intent.action.BOOT_COMPLETED"/>
                 <category android:name="android.intent.category.LAUNCHER" />

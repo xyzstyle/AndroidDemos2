@@ -63,10 +63,10 @@ action#com.xyz.static
 ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:30:17-57
 	android:name
 		ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:30:25-54
-receiver#com.xyz.receiver1.SysMsgReceiver
+receiver#com.xyz.receiver1.BootCompletedReceiver
 ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:33:9-38:20
 	android:name
-		ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:33:19-66
+		ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:33:19-73
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.LAUNCHER
 ADDED from D:\AndroidStudio\AndroidDemos2\ReceiverDemo1\src\main\AndroidManifest.xml:34:13-37:29
 action#android.intent.action.BOOT_COMPLETED

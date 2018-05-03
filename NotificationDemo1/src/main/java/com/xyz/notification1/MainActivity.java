@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String subject = ed2.getText().toString().trim();
         String body = ed3.getText().toString().trim();
 
-        Intent intent=new Intent( MainActivity.this, NotificationActivity.class);
+        Intent intent=new Intent(MainActivity.this, NotificationActivity.class);
         intent.putExtra("title", title);
         intent.putExtra("subject", subject);
         intent.putExtra("body", body);
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setWhen(System.currentTimeMillis())
                 .setContentIntent(pending);
         Notification notification = mBuilder.build();
-        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+        //notification.flags |= Notification.FLAG_AUTO_CANCEL;
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(22, notification);
     }

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
-public class SysMsgReceiver extends BroadcastReceiver {
+public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final String TAG = "xyz:SysMessageReceiver";
 
