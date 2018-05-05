@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Thu May 03 16:35:38 CST 2018
+1.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+1.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+2.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+3.set=ANDROID_RESOURCE
+2.set=ANDROID_RESOURCE
+2.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\ic_launcher.png
+count=4
+1.set=ANDROID_RESOURCE
+3.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+0.set=ANDROID_RESOURCE
+0.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+3.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\main.xml
+0.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml

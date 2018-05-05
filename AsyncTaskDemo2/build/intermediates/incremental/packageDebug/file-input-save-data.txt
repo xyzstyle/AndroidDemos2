@@ -1,0 +1,21 @@
+#Internal package file, do not edit.
+#Thu May 03 16:35:39 CST 2018
+2.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+5.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\main.xml
+5.set=ANDROID_RESOURCE
+3.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+2.set=ANDROID_RESOURCE
+4.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_01da8e00f7c60792d87976f76127f178208d6cf2
+count=6
+0.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+5.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+4.set=DEX
+1.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_88d7c945b7b6834cf06fd42b48a0e0850a9f1b62\\classes.dex
+1.set=DEX
+2.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+0.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_
+3.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-hdpi-v4\\ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_88d7c945b7b6834cf06fd42b48a0e0850a9f1b62
+4.file=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_01da8e00f7c60792d87976f76127f178208d6cf2\\classes.dex
+0.set=ANDROID_RESOURCE
