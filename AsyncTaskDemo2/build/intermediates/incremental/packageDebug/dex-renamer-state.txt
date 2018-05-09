@@ -1,7 +1,0 @@
-#Thu May 03 16:35:39 CST 2018
-base.0=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_88d7c945b7b6834cf06fd42b48a0e0850a9f1b62
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_01da8e00f7c60792d87976f76127f178208d6cf2\\classes.dex
-base.1=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_01da8e00f7c60792d87976f76127f178208d6cf2
-file.0=D\:\\AndroidStudio\\AndroidDemos2\\AsyncTaskDemo2\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_88d7c945b7b6834cf06fd42b48a0e0850a9f1b62\\classes.dex
