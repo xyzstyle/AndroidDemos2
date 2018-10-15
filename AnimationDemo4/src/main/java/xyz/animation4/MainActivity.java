@@ -21,31 +21,7 @@ public class MainActivity extends AppCompatActivity {
     AnimationSet animationSet2;
     Animation myAnimation3;
     Animation myAnimation4;
-    Handler myHandler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            switch (msg.what) { // 判断what的值
-                case 0: // what值为0时
-                    myImageView.setImageResource(R.drawable.z1);
-                    myImageView.startAnimation(animationSet1);
-                    break;
-                case 1: // what值为1时
-                    myImageView.setImageResource(R.drawable.z2);
-                    myImageView.startAnimation(animationSet2);
 
-                    break;
-                case 2: // what值为2时
-                    myImageView.setImageResource(R.drawable.z3);
-                    myImageView.startAnimation(myAnimation3);// 启动动画
-                    break;
-                case 3: // what值为3时
-                    myImageView.setImageResource(R.drawable.z4);
-                    myImageView.startAnimation(myAnimation4);// 启动动画
-                    break;
-            }
-            super.handleMessage(msg);
-        }
-    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
         prepareAnimationForPic2();
         prepareAnimationForPic3();
         prepareAnimationForPic4();
-        myHandler.sendEmptyMessage(0);
+        myImageView.setImageResource(R.drawable.z1);
+        myImageView.startAnimation(animationSet1);
 
     }
 
@@ -91,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void onAnimationEnd(Animation animation) {
-                myHandler.sendEmptyMessage(1);
+                myImageView.setImageResource(R.drawable.z2);
+                myImageView.startAnimation(animationSet2);
             }
         });
 
@@ -107,13 +85,20 @@ public class MainActivity extends AppCompatActivity {
                 Animation.RELATIVE_TO_SELF, 0.2f, Animation.RELATIVE_TO_SELF,
                 0.2f);
         rotateAnimation.setDuration(2000);
-        AlphaAnimation alphaAnimation1 = new AlphaAnimation(1, 1);
-        alphaAnimation1.setDuration(3000);
+
+        AlphaAnimation alphaAnimation1 = new AlphaAnimation(1,1);
+        alphaAnimation1.setDuration(2000);
         alphaAnimation1.setStartOffset(2000);
+
+        AlphaAnimation alphaAnimation2 = new AlphaAnimation(1, 0);
+        alphaAnimation2.setDuration(1000);
+        alphaAnimation2.setStartOffset(4000);
 
         // rotateAnimation.setStartOffset(301);
         animationSet2.addAnimation(alphaAnimation);
         animationSet2.addAnimation(rotateAnimation);
+        animationSet2.addAnimation(alphaAnimation1);
+        animationSet2.addAnimation(alphaAnimation2);
 
         animationSet2.setAnimationListener(new AnimationListener() {
 
@@ -127,7 +112,8 @@ public class MainActivity extends AppCompatActivity {
 
             public void onAnimationEnd(Animation animation) {
 
-                myHandler.sendEmptyMessage(2);
+                myImageView.setImageResource(R.drawable.z3);
+                myImageView.startAnimation(myAnimation3);// 启动动画
             }
         });
 
@@ -145,7 +131,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void onAnimationEnd(Animation animation) {
-                myHandler.sendEmptyMessage(3);
+
+                myImageView.startAnimation(myAnimation4);// 启动动画
+                myImageView.setImageResource(R.drawable.z4);
             }
         });
     }
@@ -163,7 +151,9 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void onAnimationEnd(Animation animation) {
-                myHandler.sendEmptyMessage(0);
+
+                myImageView.startAnimation(animationSet1);
+                myImageView.setImageResource(R.drawable.z1);
             }
         });
     }

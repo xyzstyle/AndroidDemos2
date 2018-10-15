@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- XML的版本以及编码方式 -->
-<set xmlns:android="http://schemas.android.com/apk/res/android" >
- <!-- 位置的变换 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 位置的变换 -->
     <translate
         android:duration="2000"
         android:fromXDelta="480"
         android:fromYDelta="800"
         android:toXDelta="0"
-        android:toYDelta="0" />
+        android:toYDelta="0"/>
 
     <rotate
         android:duration="2000"
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:toDegrees="360" />
+        android:toDegrees="360"/>
 
     <alpha
-        android:duration="3000"
-        android:startOffset="2000" />
+        android:duration="2000"
+        android:startOffset="2000"/>
+    <alpha
+        android:duration="1000"
+        android:fromAlpha="1.0"
+        android:startOffset="4000"
+        android:toAlpha="0.0"/>
 
 </set>
