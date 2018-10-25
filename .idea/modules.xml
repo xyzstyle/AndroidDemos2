@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/AnimationDemo4/AnimationDemo4.iml" filepath="$PROJECT_DIR$/AnimationDemo4/AnimationDemo4.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsyncTaskDemo1/AsyncTaskDemo1.iml" filepath="$PROJECT_DIR$/AsyncTaskDemo1/AsyncTaskDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsyncTaskDemo2/AsyncTaskDemo2.iml" filepath="$PROJECT_DIR$/AsyncTaskDemo2/AsyncTaskDemo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContentProvider1/ContentProvider1.iml" filepath="$PROJECT_DIR$/ContentProvider1/ContentProvider1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContentProvider2/ContentProvider2.iml" filepath="$PROJECT_DIR$/ContentProvider2/ContentProvider2.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" filepath="$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" filepath="$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" filepath="$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" />
@@ -26,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/NotificationDemo2/NotificationDemo2.iml" filepath="$PROJECT_DIR$/NotificationDemo2/NotificationDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/PickerDemo1/PickerDemo1.iml" filepath="$PROJECT_DIR$/PickerDemo1/PickerDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ReceiverDemo1/ReceiverDemo1.iml" filepath="$PROJECT_DIR$/ReceiverDemo1/ReceiverDemo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SQLite3/SQLite3.iml" filepath="$PROJECT_DIR$/SQLite3/SQLite3.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" filepath="$PROJECT_DIR$/SQLiteDemo1/SQLiteDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" filepath="$PROJECT_DIR$/SQLiteDemo2/SQLiteDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SurfaceViewDemo1/SurfaceViewDemo1.iml" filepath="$PROJECT_DIR$/SurfaceViewDemo1/SurfaceViewDemo1.iml" />

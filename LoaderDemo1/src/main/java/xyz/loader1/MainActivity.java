@@ -17,7 +17,7 @@ import android.widget.SimpleCursorAdapter;
 public class MainActivity extends AppCompatActivity {
 
     private SearchView searchView;
-    private static ContentResolver contentResolver;
+    //private static ContentResolver contentResolver;
     private ListView lv_show;
     private SimpleCursorAdapter simpleCursorAdapter;
 
@@ -48,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putString("keyword", newText);
                 getLoaderManager().restartLoader(1, bundle, callbacks);
-                return true;//ture 自己处理。false自己处完成后丢给系统处理
+                return true;//true 自己处理。false自己处完成后丢给系统处理
             }
         });
 
-        contentResolver = getContentResolver();
+       // contentResolver = getContentResolver();
         //得到LoaderManager，初始化Loader
         getLoaderManager().initLoader(1, null, callbacks);
     }

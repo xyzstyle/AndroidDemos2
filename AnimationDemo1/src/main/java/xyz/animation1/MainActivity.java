@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             AnimationSet animationSet = new AnimationSet(true);
-            RotateAnimation rotateAnimation = new RotateAnimation(0, 360,
-                    Animation.RELATIVE_TO_PARENT, 0.5f,
-                    Animation.RELATIVE_TO_SELF, 0f);
+            RotateAnimation rotateAnimation = new RotateAnimation(0, 180,
+                    Animation.RELATIVE_TO_SELF,3f,
+                    Animation.RELATIVE_TO_SELF, 0.5f);
             rotateAnimation.setDuration(5000);
             animationSet.addAnimation(rotateAnimation);
             imageView.startAnimation(animationSet);
@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             AnimationSet animationSet = new AnimationSet(true);
-            ScaleAnimation scaleAnimation = new ScaleAnimation(1, 3, 1, 3,
-                    Animation.RELATIVE_TO_SELF, 0f,//如果是放大，向这个点开始放大
-                    Animation.RELATIVE_TO_SELF, 0f);//如果是缩小，从这个点开始缩小
+            ScaleAnimation scaleAnimation = new ScaleAnimation(1,3f,1,3f,
+                    Animation.RELATIVE_TO_SELF, 2f,//如果是放大，向这个点开始放大
+                    Animation.RELATIVE_TO_SELF, 2f);//如果是缩小，从这个点开始缩小
             animationSet.addAnimation(scaleAnimation);
             animationSet.setStartOffset(1000);
             animationSet.setFillAfter(true);
@@ -80,12 +80,13 @@ public class MainActivity extends AppCompatActivity {
             AlphaAnimation alphaAnimation = new AlphaAnimation(1, 0);
             //设置动画执行的时间（单位：毫秒）
             alphaAnimation.setDuration(3000);
-            animationSet.setFillAfter(true);
-            animationSet.setFillBefore(false);
+            animationSet.setFillAfter(false);
+            animationSet.setFillBefore(true);
             //将AlphaAnimation对象添加到AnimationSet当中
             animationSet.addAnimation(alphaAnimation);
             //使用ImageView的startAnimation方法开始执行动画
             imageView.startAnimation(animationSet);
+
         }
 
     }

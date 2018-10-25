@@ -1,10 +1,9 @@
 package com.xyz.sqlite;
 
-import android.app.Activity;
+
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Telephony;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
@@ -70,7 +69,9 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 			public void onClick(View v) {
 				if(diary.insertRecord()){
 					show("插入两条数据成功");
-					getContentResolver().notifyChange(Uri.parse("content://com.xyz.content_provider"), null);
+					//getContentResolver().notifyChange(Uri.parse("content://com.xyz.content_provider"), null);
+					LoaderManager lm = getSupportLoaderManager();
+					lm.restartLoader(22,null, MyActivity.this);
 				}else{
 					show("插入两条数据失败");
 				}
@@ -91,6 +92,8 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
 				//showItems();
 			}
 		};
+
+
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(listener1);
@@ -139,4 +142,6 @@ public class MyActivity extends AppCompatActivity implements LoaderManager.Loade
         Toast.makeText(this,s,Toast.LENGTH_LONG).show();
 
     }
+
+
 }

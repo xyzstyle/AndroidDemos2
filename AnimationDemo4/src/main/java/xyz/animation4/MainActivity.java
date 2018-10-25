@@ -58,15 +58,10 @@ public class MainActivity extends AppCompatActivity {
         animationSet1.addAnimation(alphaAnimation);
         animationSet1.addAnimation(alphaAnimation1);
         animationSet1.setAnimationListener(new AnimationListener() {
-
             public void onAnimationStart(Animation animation) {
-
             }
-
             public void onAnimationRepeat(Animation animation) {
-
             }
-
             public void onAnimationEnd(Animation animation) {
                 myImageView.setImageResource(R.drawable.z2);
                 myImageView.startAnimation(animationSet2);
@@ -76,47 +71,32 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareAnimationForPic2() {
-
         animationSet2 = new AnimationSet(true);
         AlphaAnimation alphaAnimation = new AlphaAnimation(0, 1);
-        // 设置动画执行的时间（单位：毫秒）
-        alphaAnimation.setDuration(2000);
+        alphaAnimation.setDuration(2000);// 设置动画执行的时间（单位：毫秒）
         RotateAnimation rotateAnimation = new RotateAnimation(0, 360,
-                Animation.RELATIVE_TO_SELF, 0.2f, Animation.RELATIVE_TO_SELF,
-                0.2f);
+                Animation.RELATIVE_TO_SELF, 0.2f, Animation.RELATIVE_TO_SELF,0.2f);
         rotateAnimation.setDuration(2000);
-
         AlphaAnimation alphaAnimation1 = new AlphaAnimation(1,1);
         alphaAnimation1.setDuration(2000);
         alphaAnimation1.setStartOffset(2000);
-
         AlphaAnimation alphaAnimation2 = new AlphaAnimation(1, 0);
         alphaAnimation2.setDuration(1000);
         alphaAnimation2.setStartOffset(4000);
-
-        // rotateAnimation.setStartOffset(301);
         animationSet2.addAnimation(alphaAnimation);
         animationSet2.addAnimation(rotateAnimation);
         animationSet2.addAnimation(alphaAnimation1);
         animationSet2.addAnimation(alphaAnimation2);
-
         animationSet2.setAnimationListener(new AnimationListener() {
-
             public void onAnimationStart(Animation animation) {
-
             }
-
             public void onAnimationRepeat(Animation animation) {
-
             }
-
             public void onAnimationEnd(Animation animation) {
-
                 myImageView.setImageResource(R.drawable.z3);
                 myImageView.startAnimation(myAnimation3);// 启动动画
             }
         });
-
     }
 
     private void prepareAnimationForPic3() {

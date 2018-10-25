@@ -9,7 +9,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String TAG = "xyz";
     private static final String DATABASE_NAME = "dbForTest.db";
-    private static final int DATABASE_VERSION = 6;
+    private static final int DATABASE_VERSION = 8;
     static final String TABLE_NAME_DIARY = "diary";
     static final String ID = "_id";
     static final String DIARY_TITLE = "title";

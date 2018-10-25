@@ -1,6 +1,7 @@
-package com.xyz.sqlite;
+package xyz.sqlite3;
 
 import android.content.ContentProvider;
+import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.UriMatcher;
@@ -22,9 +23,13 @@ public class MyContentProvider extends ContentProvider {
     static {
         matcher.addURI("com.xyz.content_provider", "diary", DIARY);
     }
+
+    private ContentResolver resolver;
+
     @Override
     public boolean onCreate() {
         dao = new DiaryDAO(this.getContext());
+        resolver = getContext().getContentResolver();
         return true;
     }
 
@@ -49,7 +54,9 @@ public class MyContentProvider extends ContentProvider {
         switch (flag) {
             case DIARY:
                  dao.insertRecord();
-                return ContentUris.withAppendedId(uri, 1);
+                Uri rUri =ContentUris.withAppendedId(uri, 1);
+                resolver.notifyChange(rUri, null);//通知Loader已更新
+                return rUri;
         }
         return null;
     }
