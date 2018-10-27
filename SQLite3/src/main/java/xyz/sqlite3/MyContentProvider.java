@@ -53,9 +53,10 @@ public class MyContentProvider extends ContentProvider {
         int flag = matcher.match(uri);
         switch (flag) {
             case DIARY:
-                 dao.insertRecord();
+                dao.insertRecord();
                 Uri rUri =ContentUris.withAppendedId(uri, 1);
                 resolver.notifyChange(rUri, null);//通知Loader已更新
+
                 return rUri;
         }
         return null;

@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/AsyncTaskDemo2/AsyncTaskDemo2.iml" filepath="$PROJECT_DIR$/AsyncTaskDemo2/AsyncTaskDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContentProvider1/ContentProvider1.iml" filepath="$PROJECT_DIR$/ContentProvider1/ContentProvider1.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContentProvider2/ContentProvider2.iml" filepath="$PROJECT_DIR$/ContentProvider2/ContentProvider2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContentProvider3/ContentProvider3.iml" filepath="$PROJECT_DIR$/ContentProvider3/ContentProvider3.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" filepath="$PROJECT_DIR$/HandlerDemo1/HandlerDemo1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" filepath="$PROJECT_DIR$/HandlerDemo2/HandlerDemo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" filepath="$PROJECT_DIR$/HandlerDemo3/HandlerDemo3.iml" />

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml
@@ -37,7 +37,7 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\xyz\.android\bu
 		INJECTED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml
 application
-ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:10:5-27:19
+ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:10:5-23:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\xyz\.android\build-cache\cdc08623496900bfffe33374e1ecc5c273f92aa7\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\xyz\.android\build-cache\9a492b32e7ee8e12cf1767ed2c8ff31d96c3e068\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\xyz\.android\build-cache\dae262f704e4572bb62395bce0f541b84ded05d7\output\AndroidManifest.xml:29:5-20
@@ -69,14 +69,6 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:19:27-74
-provider#com.xyz.sqlite.MyContentProvider
-ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:22:9-25:49
-	android:authorities
-		ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:24:13-59
-	android:exported
-		ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:25:13-37
-	android:name
-		ADDED from D:\AndroidStudio\AndroidDemos2\SQLiteDemo1\src\main\AndroidManifest.xml:23:13-46
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\xyz\.android\build-cache\cdc08623496900bfffe33374e1ecc5c273f92aa7\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\xyz\.android\build-cache\9a492b32e7ee8e12cf1767ed2c8ff31d96c3e068\output\AndroidManifest.xml:25:5-27:34

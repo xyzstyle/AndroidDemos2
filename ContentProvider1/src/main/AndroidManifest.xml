@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.provider1">
+    <permission android:name="xyz.demo.PROVIDER" android:protectionLevel="normal"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name=".BookProvider"
+            android:authorities="xyz.demo.BookProvider"
+
+            android:exported="true"
+
+
+
+            />
+    </application>
+
+    <!--
+               android:name="MyProvider"
+               android:authorities="scut.carson_ho.myprovider"
+
+               // 声明外界进程可访问该Provider的权限（读 & 写）
+               android:permission="scut.carson_ho.PROVIDER"
+
+               // 权限可细分为读 & 写的权限
+               // 外界需要声明同样的读 & 写的权限才可进行相应操作，否则会报错
+               // android:readPermisson = "scut.carson_ho.Read"
+               // android:writePermisson = "scut.carson_ho.Write"
+
+               // 设置此provider是否可以被其他进程使用
+               android:exported="true"
+    -->
+</manifest>

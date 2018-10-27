@@ -1,8 +1,12 @@
 package xyz.sqlite3;
 
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.database.ContentObserver;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     DiaryDAO diary;
     private ListView list;
     private SimpleCursorAdapter simpleCursorAdapter;
+    private ContentResolver resolver;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,7 +50,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private void init() {
         list = findViewById(R.id.list);
-
+        resolver = getContentResolver();
+        resolver.registerContentObserver(Uri.parse("content://com.xyz.content_provider/diary"),
+                true,new MyContentObserver(new Handler()));
         listener1 = new OnClickListener() {
             public void onClick(View v) {
                 if (diary.createTable()) {
@@ -66,15 +73,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         };
         listener3 = new OnClickListener() {
             public void onClick(View v) {
-                if (diary.insertRecord()) {
-                    show("插入两条数据成功");
-                    getContentResolver().notifyChange(Uri.parse("content://com.xyz.content_provider"), null);
-                    //LoaderManager lm = getSupportLoaderManager();
-                    //lm.restartLoader(22, null, MainActivity.this);
-                    loader.onContentChanged();
-                } else {
-                    show("插入两条数据失败");
-                }
+
+
+                getContentResolver().insert(Uri.parse("content://com.xyz.content_provider/diary"), null);
+
             }
         };
         listener4 = new OnClickListener() {
@@ -139,6 +141,23 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         Toast.makeText(this, s, Toast.LENGTH_LONG).show();
 
     }
+    private class MyContentObserver extends ContentObserver {
 
+        /**
+         * Creates a content observer.
+         *
+         * @param handler The handler to run {@link #onChange} on, or null if none.
+         */
+        public MyContentObserver(Handler handler) {
+            super(handler);
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+            //simpleCursorAdapter.notifyDataSetChanged();
+            loader.onContentChanged();
+
+        }
+    }
 
 }
